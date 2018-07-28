@@ -1,0 +1,43 @@
+body{
+   background: url(Images/contactbg.jpg);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+.team{
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column
+
+}
+
+.member:nth-child(even){
+   display:inline-flex;
+   flex-direction: row;
+}
+.member:nth-child(odd){
+   display: inline-flex;
+   flex-direction: row-reverse;
+}
+.member{
+   background: #eee;
+   margin: 25px 15%;
+   padding: 20px;
+   box-sizing: border-box;
+   border-radius: 10px;
+}
+.member img{
+   border-radius: 50%;
+}
+
+.member img, .memName{
+   padding: 10px;
+   box-sizing: border-box;
+}
+ .member p{
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: justify;
+}

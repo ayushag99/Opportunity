@@ -7,7 +7,9 @@
 
 }
 body{
-   /*display: flex;*/
+   display: flex;
+   flex-direction: column;
+
 }
 header{
    width: 100vw;
@@ -63,22 +65,26 @@ nav ul.nav li{
 
 .navBut:hover{
    padding: 3px 23px;
-   margin: 0px; 5px;
+   margin: 0px 5px;
    border: 2px solid #52B8BD;
 }
 
-
-
+/*Center Content*/
+.center{
+   flex: 1 0 auto;
+   display: inline-flex;
+}
 /*   SIDEBAR    */
 
 .sidebar{
    margin-top: -4px;
    width:20%;
+   height: 100vh;
    overflow-y: auto;
-   position:absolute;
-   left:0px;
+   float:left;
    border-right: 3px solid rgb(204,204,204);
-
+   position: sticky;
+   top: 0;
 }
 .sideHead{
    width: 100%;
@@ -102,25 +108,84 @@ nav ul.nav li{
    color: #000;
    font-size: 1.2rem;
    width: 100%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   box-sizing: border-box;
 
 }
 .mainContent{
+   display: inline-block;
    margin: 3%;
    width: 75%;
    box-sizing: border-box;
-   float:right;
+   float:left;
    background-color:rgb(204,204,204);
    height: 50px;
    text-transform: uppercase;
 }
-
 .heading{
    width: 100%;
    text-align: center;
+   padding-top: 10px;
+
 }
 
-footer{
+.heroes{
+   display: grid;
+   grid-template-columns:  auto auto auto;
+   grid-gap: 10px;
+   margin-top: 50px;
+
+}
+
+div.hero{
+   height: 300px;
+   border: 2px solid #ccc;
+   border-radius: 10px;
+}
+
+.hero h4{
+}
+
+
+
+
+/*   FOOTER    */
+
+.footer{
    width: 100vw;
-   heigth: 150px;
-   background-color: #000;
+   height: 100px;
+   background-color: #333;
+   display: inline-flex;
+   color: #fff;
+   /*   FOOTER*/
+      font-size: 10px;
+
+
+
+}
+.element{
+   width:80vw;
+   margin auto;
+   display: flex;
+   justify-content: center;
+}
+
+.mem{
+      list-style-type: none;
+}
+.team{
+   padding : 5px;
+}
+.rights{
+   padding-top: 20px;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.social{
+   padding-top: 20px;
+   padding-left: 30px;
+   padding-right: 30px;
 }

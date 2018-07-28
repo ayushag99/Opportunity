@@ -1,0 +1,78 @@
+body{
+   background: url(Images/contactbg.jpg);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.form{
+   margin-top: 100px;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   text-align: baseline;
+
+}
+.bg{
+   background: rgba(208,208,208,0.45) ;
+
+   border-radius: 15px;
+   width:60vw;
+   padding-left: 10%;
+   padding-right: 10%;
+   box-sizing: border-box;
+
+}
+h2.heading{
+   width:100%;
+   text-align: center;
+   margin-top: 25px;
+}
+label{
+   font-size: 1.2rem;
+   margin: 20px;
+   width: 15%;
+}
+
+input[type="text"]{
+   padding: 10px;
+   padding-left: 15px;
+   font-size: 20px;
+   margin-top: 50px;
+}
+input[type="number"]{
+   padding: 10px;
+   padding-left: 15px;
+   font-size: 20px;
+   margin-top: 50px;
+}
+input[type="radio"]{
+   padding: 10px;
+   padding-left: 15px;
+   font-size: 20px;
+   margin-top: 50px;
+}
+input:focus{
+   outline: none;
+}
+.submit{
+      width:20vw;
+      padding: 10px;
+      padding-left: 15px;
+      font-size: 20px;
+      margin-top: 50px;
+      margin-bottom: 25px;
+      margin-left: 20px;
+      background-color: rgb(78,203, 130);
+      text-transform:uppercase;
+      transition: 0.3 background;
+
+}
+
+.submit:hover{
+   background-color: rgb(60,190,110);
+}
+.footer{
+   position: fixed;
+   bottom: 0;
+}
